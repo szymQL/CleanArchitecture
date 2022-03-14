@@ -1,7 +1,6 @@
 package isp.incorrect
 
 trait Operations {
-
   def operation1(): Unit = {
     println("Operation 1")
   }
