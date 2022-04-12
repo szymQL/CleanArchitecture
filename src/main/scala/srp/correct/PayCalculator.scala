@@ -1,7 +1,9 @@
 package srp.correct
 
-trait PayCalculator {
+trait PayCalculator extends RegularHoursCalculator {
   def calculatePay(): Unit = {
-    println("Pay calculated")
+    println(s"Pay calculated for ${regularHours()}")
   }
+
+  override def regularHours(): Int = 7
 }

@@ -1,10 +1,16 @@
 package isp.correct
 
 trait Operations {
-  protected def operation1(): Unit
+  def operation1(): Unit = {
+    println("Operation 1")
+  }
 
-  protected def operation2(): Unit
+  def operation2(): Unit = {
+    println("Operation 2")
+  }
 
-  protected def operation3(): Unit
+  def operation3(): Unit = {
+    println("Operation 3")
+  }
 
 }

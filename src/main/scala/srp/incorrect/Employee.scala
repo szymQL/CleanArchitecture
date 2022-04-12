@@ -1,13 +1,13 @@
 package srp.incorrect
 
-class Employee {
+class Employee extends RegularHoursCalculator {
 
   def calculatePay(): Unit = {
-    println("Pay calculated")
+    println(s"Pay calculated for ${regularHours()} hours")
   }
 
   def reportHours(): Unit = {
-    println("Hours reported")
+    println(s"${regularHours()} hours reported")
   }
 
   def saveEmployee(): Unit = {

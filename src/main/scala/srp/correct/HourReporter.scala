@@ -1,7 +1,9 @@
 package srp.correct
 
-trait HourReporter {
+trait HourReporter extends RegularHoursCalculator {
   def reportHours(): Unit = {
-    println("Hours reported")
+    println(s"${regularHours()} hours reported")
   }
+
+  override def regularHours(): Int = 7
 }
